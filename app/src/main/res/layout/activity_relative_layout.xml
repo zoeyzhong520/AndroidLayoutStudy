@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutActivity">
+
+<!--    不设置相对位置（重叠在一起）-->
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <View-->
+<!--            android:id="@+id/view_top_1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@color/teal_200"></View>-->
+<!--        <View-->
+<!--            android:id="@+id/view_top_2"-->
+<!--            android:layout_width="200dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@color/purple_200"></View>-->
+<!--        <View-->
+<!--            android:id="@+id/view_top_3"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:background="@color/design_default_color_error"></View>-->
+
+<!--    </RelativeLayout>-->
+
+<!--    设置相对位置，未出现重叠-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_top_1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/teal_200"></View>
+        <View
+            android:id="@+id/view_top_2"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/view_top_1"
+            android:background="@color/purple_200"></View>
+        <View
+            android:id="@+id/view_top_3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/view_top_2"
+            android:background="@color/design_default_color_error"></View>
+        <View
+            android:id="@+id/view_top_4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/view_top_2"
+            android:layout_toRightOf="@id/view_top_3"
+            android:background="@color/black"></View>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

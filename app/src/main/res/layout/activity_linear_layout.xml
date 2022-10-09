@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinearLayoutActivity">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+<!--        均等分布-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/purple_200"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_height="0dp">-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@color/teal_200"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_height="0dp">-->
+<!--        </LinearLayout>-->
+
+<!--        不等分布-->
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="@color/teal_200"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <View
+            android:id="@+id/view_top_1"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/cardview_dark_background"></View>
+        <View
+            android:id="@+id/view_top_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/material_on_background_disabled"></View>
+        <View
+            android:id="@+id/view_top_3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_primary"></View>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/purple_200"
+            android:orientation="horizontal"
+            android:layout_height="0dp">
+
+            <View
+                android:id="@+id/view_bottom_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/design_default_color_secondary_variant"></View>
+            <View
+                android:id="@+id/view_bottom_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/cardview_light_background"></View>
+            <View
+                android:id="@+id/view_bottom_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/design_default_color_error"></View>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

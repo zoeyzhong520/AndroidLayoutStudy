@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridLayoutActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5"
+        tools:ignore="MissingConstraints,UselessLeaf">
+
+        <Button
+            android:id="@+id/one"
+            android:text="1"></Button>
+        <Button
+            android:id="@+id/two"
+            android:text="2"></Button>
+        <Button
+            android:id="@+id/three"
+            android:text="3"></Button>
+        <Button
+            android:id="@+id/devide"
+            android:text="/"></Button>
+        <Button
+            android:id="@+id/four"
+            android:text="4"></Button>
+        <Button
+            android:id="@+id/five"
+            android:text="5"></Button>
+        <Button
+            android:id="@+id/six"
+            android:text="6"></Button>
+        <Button
+            android:id="@+id/multiply"
+            android:text="x"></Button>
+        <Button
+            android:id="@+id/seven"
+            android:text="7"></Button>
+        <Button
+            android:id="@+id/eight"
+            android:text="8"></Button>
+        <Button
+            android:id="@+id/nine"
+            android:text="9"></Button>
+        <Button
+            android:id="@+id/minus"
+            android:text="-"></Button>
+        <Button
+            android:id="@+id/zero"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0"></Button>
+        <Button
+            android:id="@+id/point"
+            android:text="."></Button>
+        <Button
+            android:id="@+id/plus"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:text="+"></Button>
+        <Button
+            android:id="@+id/equal"
+            android:layout_columnSpan="3"
+            android:layout_gravity="fill"
+            android:text="="></Button>
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
